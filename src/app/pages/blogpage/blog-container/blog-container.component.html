@@ -1,0 +1,36 @@
+<app-header></app-header>
+<!-- parte de inscrição por email para novidades será implementada posteriormente-->
+<app-blog-news></app-blog-news>
+<!-- ------------------------------------------ -->
+<h2>Postagens Recentes</h2>
+<div class="blog-list">
+    <div class="main-news">
+        <app-blog-main-news
+            [ID]="data[0].ID"
+            [PhotoCover]=" data[0].PhotoCover"
+            [Author]="data[0].Author"
+            [Date]="data[0].Date"
+            [Title]="data[0].Title"
+            [Description]="data[0].Description"
+            [Themes]="data[0].Themes"
+        ></app-blog-main-news>
+    </div>
+    <div class="other-news">
+        <app-blog-item *ngFor="let item of data | slice:1"
+            [ID]="item.ID"
+            [Author]="item.Author"
+            [Date]="item.Date"
+            [PhotoCover]="item.PhotoCover"
+            [Title]="item.Title"
+            [Description]="item.Description"
+            [Themes]="item.Themes"
+        ></app-blog-item>
+    </div>
+</div>
+<!--
+    -- essa seção será implementada posteriormente -- 
+<div class="see-more">
+    <a>Ver Mais</a>
+</div>
+ -->
+ <app-footer></app-footer>

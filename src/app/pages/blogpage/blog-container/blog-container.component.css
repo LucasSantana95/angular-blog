@@ -1,0 +1,32 @@
+.blog-list{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+}
+.main-news{
+    width: 50%;
+    min-height: 400px;
+}
+.other-news{
+    width: 45%;
+}
+.see-more{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+}
+.see-more a{
+    border: 1px solid gray;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #121927;
+    color: #fff;
+    padding: 8px 10px;
+    border-radius: 8px;
+}
+.see-more a:hover{
+    box-shadow: 0px 0px 5px 3px;
+}

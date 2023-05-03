@@ -1,0 +1,12 @@
+<div class="container" (click)="onClick()">
+    <img src="{{ PhotoCover }}" alt="photo" class="photo">
+    <div class="info-div">
+        <p class="author-info">{{ Author }} - {{ Date }}</p>
+        <p class="title">{{ Title }}</p>
+        <p class="spoiler">{{ Description }}</p>
+        <div class="categoryarea">
+            <!-- area para carregar os temas realacionados a postagem -->
+            <a href="/theme/:{{theme}}" *ngFor="let theme of Themes"> {{ theme }}</a>
+        </div>
+    </div>
+</div>

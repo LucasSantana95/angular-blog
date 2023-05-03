@@ -1,0 +1,46 @@
+.container{
+    width: 100%;
+    min-height: 200px;
+    display: flex;
+    flex-direction: row;
+    margin: 0px 0px 10px;
+    cursor: pointer;
+}
+.container:hover{
+    box-shadow: 0px 0px 5px 2px;
+}
+.photo{
+    width: 60%;
+    border-radius: 5px;
+}
+.info-div{
+    margin: 5px;
+}
+.author-info{
+    color: #6b7075;
+    font-size: 14px;
+}
+.title{
+    color: #40454f;
+    font-weight: 800;
+    font-size: 21px;
+    margin: 10px 0px;
+}
+.spoiler{
+    color: #969a9f;
+    margin: 10px 5px;
+    font-size: 19px;
+    width: 200px;
+    height: 100px;
+    overflow: auto;
+    text-overflow: ellipsis;
+}
+.categoryarea{
+    padding: 5px;
+}
+.categoryarea a{
+    border: 1px solid gray;
+    padding: 2px;
+    margin: 5px;
+    border-radius: 20px;
+}
